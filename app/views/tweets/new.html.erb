@@ -1,0 +1,6 @@
+<h3 class="page-header">いまどうしてる？</h3>
+<%= form_for([@user, @user.tweets.build]) do |f| %>
+  <p><%= f.label :body,"いまどうしてる？" %></p>
+  <p><%= f.text_area :body %></p>
+  <p><%= f.submit "ツイートする", class: "btn btn-primary" %></p>
+<% end %>

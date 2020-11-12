@@ -1,0 +1,59 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-brand {
+	padding: 15px 0 15px 15px;
+}
+
+.navbar-inverse .navbar-brand {
+	color:#000000;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color:#000000;
+}
+
+.navbar-inverse {
+	background-color:#87cefa;
+	border-color:#87cefa;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 0;
+	}
+}
+
+@media screen and (min-width: 500px) {
+   /*　画面サイズ 500px以上で適用　*/
+   input {width:600px;}
+   textarea {
+     width:600px;
+     height:300px;
+   }
+ }
+
+@media screen and (max-width: 499px) {
+   /*　画面サイズ 499pxまで適用　*/
+   input {width:300px;}
+   textarea {
+     width:300px;
+     height:200px;
+   }
+ }
+
+ .btn {
+   margin-top:20px;
+ }
+
+ a {
+   text-decoration:none;
+ }
+
+ a:hover {
+   color:red;
+ }
+
+ .badge a {
+   color:white;
+ }

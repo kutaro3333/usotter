@@ -1,0 +1,6 @@
+<div class="container">
+<h1>twitter</h1>
+<% @user.each do |user| %>
+<p><%= link_to user.email,user_path(user.id) %></p>
+<% end %>
+</div>

@@ -27,7 +27,7 @@ class TweetsController < ApplicationController
     @tweet =  Tweet.find(params[:id])
     # tweetを削除したら投稿を削除しましたメッセージを表示してrootへリダイレクト
     if @tweet.destroy
-      redirect_to "/", flash: {: "投稿を削除しました"}
+      redirect_to "/", flash: {danger: "投稿を削除しました"}
     end
   end
 

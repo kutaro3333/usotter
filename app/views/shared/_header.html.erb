@@ -17,6 +17,7 @@
     <ul class="nav navbar-nav navbar-right">
       <% if logged_in? %>
         <li><%= link_to "投稿一覧", tweets_index_path %></li>
+        <li><%= link_to "新規投稿", new_user_tweet_path %></li>
         <li><%= link_to @current_user.email + "さんでログイン中" %></li>
         <li><%= link_to "ログアウト", sessions_path(@user), method: :delete %></li>
       <% else %>

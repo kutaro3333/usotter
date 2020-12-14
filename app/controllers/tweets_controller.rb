@@ -9,11 +9,8 @@ class TweetsController < ApplicationController
   end
 
   def create
-    # user_idから探したユーザー
     @user = User.find(params[:user_id])
-    # user_idから探したユーザーでtweetを登録
     @user.tweets.create(tweet_params)
-    # ツイート一覧ページへリダイレクト
     redirect_to tweets_index_path
   end
 
